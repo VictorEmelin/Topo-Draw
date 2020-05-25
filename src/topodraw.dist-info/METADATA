@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: topodraw
+Formal-Name: Topo Draw
+App-ID: com.example.topodraw
+Version: 0.0.1
+Home-page: https://example.com/topodraw
+Author: Victor Emelin
+Author-email: victorcss@yahoo.com
+Summary: Try to draw a topographic profile from a fragment of a topographic map

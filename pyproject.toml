@@ -1,0 +1,52 @@
+[build-system]
+requires = ["briefcase"]
+
+[tool.briefcase]
+project_name = "Topo Draw"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/topodraw"
+license = "BSD license"
+author = 'Victor Emelin'
+author_email = "victorcss@yahoo.com"
+
+[tool.briefcase.app.topodraw]
+formal_name = "Topo Draw"
+description = "Try to draw a topographic profile from a fragment of a topographic map"
+icon = "src/topodraw/resources/topodraw"
+sources = ['src/topodraw']
+requires = []
+
+
+[tool.briefcase.app.topodraw.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.topodraw.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev18',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.topodraw.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev18',
+]
+
+# Mobile deployments
+[tool.briefcase.app.topodraw.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.topodraw.android]
+requires = [
+    'toga-android>=0.3.0.dev18',
+]
